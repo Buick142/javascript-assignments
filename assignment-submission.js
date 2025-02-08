@@ -32,13 +32,36 @@
 //-- HTML Code -----
 
 //-- Javascript Code -----
+const users = [
+    {id: 1, name: "Alice"},
+    {id: 2, name: "Bob"},
+    {id: 3, name: "Charlie"}
+];
 
+const userNames = users.map(user => user.name);
+console.log(userNames);
 
 //--- Sheet 1p2 Assignment 7 --------------------------------------------------------
 //-- HTML Code -----
 
 //-- Javascript Code -----
+const fruit = [
+    {
+        'apple',
+        'banana',
+        'apple',
+        'cherry',
+        'banana',
+        'apple'
+    };
+];
 
+const fruitCount = fruit.reduce((acc, fruitItem) => {
+    acc[fruitItem] = (acc[fruitItem] || 0) + 1;
+    return acc;
+}, {});
+
+console.log(fruitCount);
 
 //--- Sheet 1p1 Assignment 10 --------------------------------------------------------
 //-- HTML Code -----
