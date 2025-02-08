@@ -46,14 +46,12 @@ console.log(userNames);
 
 //-- Javascript Code -----
 const fruit = [
-    {
-        'apple',
-        'banana',
-        'apple',
-        'cherry',
-        'banana',
-        'apple'
-    };
+    'apple',
+    'banana',
+    'apple',
+    'cherry',
+    'banana',
+    'apple'
 ];
 
 const fruitCount = fruit.reduce((acc, fruitItem) => {
